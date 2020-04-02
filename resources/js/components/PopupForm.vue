@@ -17,7 +17,7 @@
         </h3>
         <form class="form">
           <email-field></email-field>
-          <button>Send Me The Tips</button>
+          <cta-button>Send Me The Tips »</cta-button>
         </form>
       </section>
     </div>
@@ -26,9 +26,12 @@
 
 <script>
 import EmailField from "./EmailField";
+import CtaButton from "./CtaButton";
+
 export default {
   components: {
-    EmailField
+    EmailField,
+    CtaButton
   },
   mounted() {
     console.log("Component mounted.");
@@ -72,7 +75,7 @@ export default {
   @include element("container") {
     position: relative;
     width: 355px;
-    height: 272px;
+    padding-bottom: 24px;
     margin: auto;
     background: #ffffff;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
