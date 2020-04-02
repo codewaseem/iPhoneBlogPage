@@ -22,6 +22,7 @@ export default {
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
+  cursor: pointer;
   border: 0px;
   text-align: center;
   display: block;

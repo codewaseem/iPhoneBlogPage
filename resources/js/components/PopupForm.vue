@@ -2,7 +2,7 @@
   <div class="popup">
     <div class="popup_overlay"></div>
     <div class="popup__container">
-      <div class="popup__close">×</div>
+      <div class="popup__close" @click="$emit('close')">×</div>
       <div class="progress">
         <span class="progress__step-count">Step 1 of 2</span>
         <div class="progress__meter">
@@ -17,7 +17,7 @@
         </h3>
         <form class="form">
           <email-field></email-field>
-          <cta-button>Send Me The Tips »</cta-button>
+          <cta-button @submit.native.prevent="window.reload">Send Me The Tips »</cta-button>
         </form>
       </section>
     </div>
@@ -70,6 +70,7 @@ export default {
     /* identical to box height */
     z-index: 999;
     color: #464646;
+    cursor: pointer;
   }
 
   @include element("container") {

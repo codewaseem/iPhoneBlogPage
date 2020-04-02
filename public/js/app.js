@@ -343,6 +343,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CtaButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CtaButton */ "./resources/js/components/CtaButton.vue");
+/* harmony import */ var _PopupForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PopupForm */ "./resources/js/components/PopupForm.vue");
+//
 //
 //
 //
@@ -350,9 +352,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      isPopupOpen: false
+    };
+  },
+  methods: {
+    openPopup: function openPopup() {
+      this.isPopupOpen = true;
+    },
+    closePopup: function closePopup() {
+      this.isPopupOpen = false;
+    }
+  },
   components: {
-    CtaButton: _CtaButton__WEBPACK_IMPORTED_MODULE_0__["default"]
+    CtaButton: _CtaButton__WEBPACK_IMPORTED_MODULE_0__["default"],
+    PopupForm: _PopupForm__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   mounted: function mounted() {
     console.log("Component mounted.");
@@ -372,7 +389,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/BlogPost */ "./resources/js/components/BlogPost.vue");
 /* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SideBar */ "./resources/js/components/SideBar.vue");
-/* harmony import */ var _components_PopupForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PopupForm */ "./resources/js/components/PopupForm.vue");
 //
 //
 //
@@ -380,15 +396,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     BlogPost: _components_BlogPost__WEBPACK_IMPORTED_MODULE_0__["default"],
-    SideBar: _components_SideBar__WEBPACK_IMPORTED_MODULE_1__["default"],
-    PopupForm: _components_PopupForm__WEBPACK_IMPORTED_MODULE_2__["default"]
+    SideBar: _components_SideBar__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -425,7 +438,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".cta-btn[data-v-44841af2] {\n  background: linear-gradient(90deg, #ac519c 0.83%, #e5424f 100%);\n  /* box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5); */\n  margin: auto;\n  position: relative;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 24px;\n  /* identical to box height */\n  border: 0px;\n  text-align: center;\n  display: block;\n  color: #ffffff;\n  width: 100%;\n  font-family: Lato;\n  height: 50px;\n}", ""]);
+exports.push([module.i, ".cta-btn[data-v-44841af2] {\n  background: linear-gradient(90deg, #ac519c 0.83%, #e5424f 100%);\n  /* box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5); */\n  margin: auto;\n  position: relative;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 24px;\n  /* identical to box height */\n  cursor: pointer;\n  border: 0px;\n  text-align: center;\n  display: block;\n  color: #ffffff;\n  width: 100%;\n  font-family: Lato;\n  height: 50px;\n}", ""]);
 
 // exports
 
@@ -463,7 +476,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".popup[data-v-b68bc496] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 100vw;\n}\n.popup_overlay[data-v-b68bc496] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  background: #262626;\n  mix-blend-mode: normal;\n  opacity: 0.8;\n}\n.popup__close[data-v-b68bc496] {\n  position: absolute;\n  height: 35px;\n  right: 9px;\n  font-family: Lato;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 29px;\n  line-height: 35px;\n  /* identical to box height */\n  z-index: 999;\n  color: #464646;\n}\n.popup__container[data-v-b68bc496] {\n  position: relative;\n  width: 355px;\n  padding-bottom: 24px;\n  margin: auto;\n  background: #ffffff;\n  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);\n  display: flex;\n  flex-direction: column;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.popup .form-section[data-v-b68bc496] {\n  width: 320px;\n  margin: 0 auto;\n}\n.popup .form-section_green-text[data-v-b68bc496] {\n  color: #427b09;\n}\n.popup .form-section__heading[data-v-b68bc496] {\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 26px;\n  margin-bottom: 23px;\n  color: #464646;\n}\n.popup .form__form-field[data-v-b68bc496] {\n  position: relative;\n}\n.popup .progress[data-v-b68bc496] {\n  width: 320px;\n  margin: 12px auto;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.popup .progress__step-count[data-v-b68bc496] {\n  font-style: normal;\n  font-weight: 300;\n  font-size: 14px;\n  line-height: 17px;\n  color: #848484;\n  display: inline-block;\n  margin-bottom: 12px;\n}\n.popup .progress__meter[data-v-b68bc496] {\n  position: relative;\n  width: 100%;\n  height: 2px;\n  background: #e5e5e5;\n}\n.popup .progress__bar[data-v-b68bc496] {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 50%;\n  height: 2px;\n  background: linear-gradient(90deg, #e5424f 20%, #ac519c);\n}", ""]);
+exports.push([module.i, ".popup[data-v-b68bc496] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 100vw;\n}\n.popup_overlay[data-v-b68bc496] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  background: #262626;\n  mix-blend-mode: normal;\n  opacity: 0.8;\n}\n.popup__close[data-v-b68bc496] {\n  position: absolute;\n  height: 35px;\n  right: 9px;\n  font-family: Lato;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 29px;\n  line-height: 35px;\n  /* identical to box height */\n  z-index: 999;\n  color: #464646;\n  cursor: pointer;\n}\n.popup__container[data-v-b68bc496] {\n  position: relative;\n  width: 355px;\n  padding-bottom: 24px;\n  margin: auto;\n  background: #ffffff;\n  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);\n  display: flex;\n  flex-direction: column;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.popup .form-section[data-v-b68bc496] {\n  width: 320px;\n  margin: 0 auto;\n}\n.popup .form-section_green-text[data-v-b68bc496] {\n  color: #427b09;\n}\n.popup .form-section__heading[data-v-b68bc496] {\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 26px;\n  margin-bottom: 23px;\n  color: #464646;\n}\n.popup .form__form-field[data-v-b68bc496] {\n  position: relative;\n}\n.popup .progress[data-v-b68bc496] {\n  width: 320px;\n  margin: 12px auto;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.popup .progress__step-count[data-v-b68bc496] {\n  font-style: normal;\n  font-weight: 300;\n  font-size: 14px;\n  line-height: 17px;\n  color: #848484;\n  display: inline-block;\n  margin-bottom: 12px;\n}\n.popup .progress__meter[data-v-b68bc496] {\n  position: relative;\n  width: 100%;\n  height: 2px;\n  background: #e5e5e5;\n}\n.popup .progress__bar[data-v-b68bc496] {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 50%;\n  height: 2px;\n  background: linear-gradient(90deg, #e5424f 20%, #ac519c);\n}", ""]);
 
 // exports
 
@@ -1966,7 +1979,18 @@ var render = function() {
     _c("div", { staticClass: "popup_overlay" }),
     _vm._v(" "),
     _c("div", { staticClass: "popup__container" }, [
-      _c("div", { staticClass: "popup__close" }, [_vm._v("×")]),
+      _c(
+        "div",
+        {
+          staticClass: "popup__close",
+          on: {
+            click: function($event) {
+              return _vm.$emit("close")
+            }
+          }
+        },
+        [_vm._v("×")]
+      ),
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
@@ -1979,7 +2003,18 @@ var render = function() {
           [
             _c("email-field"),
             _vm._v(" "),
-            _c("cta-button", [_vm._v("Send Me The Tips »")])
+            _c(
+              "cta-button",
+              {
+                nativeOn: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.window.reload($event)
+                  }
+                }
+              },
+              [_vm._v("Send Me The Tips »")]
+            )
           ],
           1
         )
@@ -2038,9 +2073,22 @@ var render = function() {
     "aside",
     { staticClass: "side-bar" },
     [
-      _c("cta-button", { style: { width: "283px" } }, [
-        _vm._v("Send Me The Tips")
-      ])
+      _c(
+        "cta-button",
+        {
+          style: { width: "283px" },
+          nativeOn: {
+            click: function($event) {
+              return _vm.openPopup($event)
+            }
+          }
+        },
+        [_vm._v("Send Me The Tips")]
+      ),
+      _vm._v(" "),
+      _vm.isPopupOpen
+        ? _c("popup-form", { on: { close: _vm.closePopup } })
+        : _vm._e()
     ],
     1
   )
@@ -2067,17 +2115,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("blog-post"),
-      _vm._v(" "),
-      _c("side-bar"),
-      _vm._v(" "),
-      _c("popup-form")
-    ],
-    1
-  )
+  return _c("div", [_c("blog-post"), _vm._v(" "), _c("side-bar")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
