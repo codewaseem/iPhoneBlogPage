@@ -144,7 +144,7 @@ export default {
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 17px;
     }
 
     @include element("image") {
