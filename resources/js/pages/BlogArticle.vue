@@ -1,19 +1,21 @@
 <template>
-    <div>
-        <blog-post></blog-post>
-        <side-bar></side-bar>
-    </div>
+  <div>
+    <blog-post></blog-post>
+    <side-bar></side-bar>
+    <popup-form></popup-form>
+  </div>
 </template>
 
 <script>
 import BlogPost from "../components/BlogPost";
 import SideBar from "../components/SideBar";
+import PopupForm from "../components/PopupForm";
 
 export default {
-    data() {},
-    components: {
-        BlogPost,
-        SideBar
-    }
+  components: {
+    BlogPost,
+    SideBar,
+    PopupForm
+  }
 };
 </script>

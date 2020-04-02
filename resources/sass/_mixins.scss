@@ -1,3 +1,5 @@
+// Mixin for BEM Methodology
+// Credits: https://css-tricks.com/snippets/sass/bem-mixins/
 @mixin element($element) {
     &__#{$element} {
         @content;
@@ -9,6 +11,56 @@
 /// @param {String} $modifier - Modifier's name
 @mixin modifier($modifier) {
     &_#{$modifier} {
+        @content;
+    }
+}
+
+// Mixin for float lables
+// Credits: https://codepen.io/tonystar/pen/JRLaKw
+@mixin float-label-container {
+    display: block;
+    position: relative;
+    background: #ffffff;
+    box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+@mixin float-label {
+    label,
+    > span {
+        position: absolute;
+        left: 16px;
+        top: 8px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        cursor: text;
+        color: #828282;
+        transition: all 0.2s;
+        @content;
+    }
+}
+
+@mixin float-label-input {
+    &::placeholder {
+        opacity: 1;
+        transition: all 0.2s;
+    }
+    &:placeholder-shown:not(:focus)::placeholder {
+        opacity: 0;
+    }
+    &:invalid {
+        color: #e51323;
+
+        & + span {
+            color: #e51323;
+        }
+    }
+}
+
+@mixin float-label-scaled {
+    &:placeholder-shown:not(:focus) + * {
         @content;
     }
 }
