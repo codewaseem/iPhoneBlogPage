@@ -15,9 +15,13 @@ export default {
   methods: {
     openPopup() {
       this.isPopupOpen = true;
+      //prevent scrolling when pop-up is open
+      window.document.body.style.overflow = "hidden";
     },
     closePopup() {
       this.isPopupOpen = false;
+      // allow normal scroll behaviour when pop-up is closed
+      window.document.body.style.overflow = "";
     }
   },
   components: {
