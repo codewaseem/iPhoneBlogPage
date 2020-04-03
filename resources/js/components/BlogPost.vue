@@ -95,6 +95,10 @@ export default {
 
   > * {
     @include default-section-style;
+    @include desktop-styles {
+      width: 100%;
+      margin: 28px auto;
+    }
   }
 
   @include element("paragraph") {
@@ -104,10 +108,16 @@ export default {
   @include element("image") {
     margin: 0;
     width: 100%;
+
+    @include desktop-styles {
+      margin-bottom: 45px;
+    }
   }
 
   @include element("section-heading") {
     margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 </style>

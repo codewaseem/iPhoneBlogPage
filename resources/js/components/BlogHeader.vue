@@ -41,6 +41,9 @@ export default {
 .blog-header {
   > * {
     @include default-section-style;
+    @include desktop-styles {
+      width: 100%;
+    }
   }
 
   @include element("divider") {
@@ -52,6 +55,11 @@ export default {
     font-size: 24px;
     line-height: 29px;
     font-weight: bold;
+
+    @include desktop-styles {
+      font-size: 26px;
+      line-height: 31px;
+    }
   }
 }
 </style>

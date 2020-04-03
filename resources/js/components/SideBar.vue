@@ -1,6 +1,10 @@
 <template>
   <aside class="side-bar">
-    <cta-button @click.native="openPopup" :style="{width:'80%'}">Send Me The Tips</cta-button>
+    <cta-button
+      @click.native="openPopup"
+      class="font-styles"
+      :style="{width:'80%'}"
+    >Send Me The Tips</cta-button>
     <popup-form v-if="isPopupOpen" @close="closePopup"></popup-form>
   </aside>
 </template>
@@ -36,6 +40,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../sass/mixins";
+
+.font-styles {
+  @include desktop-styles {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
 
 .side-bar {
   width: 100%;

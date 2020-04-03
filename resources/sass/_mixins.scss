@@ -6,6 +6,12 @@
     line-height: 24px;
 }
 
+@mixin desktop-styles {
+    @media (min-width: 930px) {
+        @content;
+    }
+}
+
 // Mixin for BEM Methodology
 // Credits: https://css-tricks.com/snippets/sass/bem-mixins/
 @mixin element($element) {

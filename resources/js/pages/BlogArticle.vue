@@ -39,7 +39,7 @@ export default {
     max-width: 340px;
   }
 
-  @media (min-width: 930px) {
+  @include desktop-styles {
     width: 890px;
 
     @supports (display: grid) {
@@ -60,6 +60,8 @@ export default {
     }
     .blog-header {
       margin-top: 76px;
+      font-size: 26px;
+      line-height: 31px;
     }
 
     .blog-post {

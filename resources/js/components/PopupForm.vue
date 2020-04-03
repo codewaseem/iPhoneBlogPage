@@ -17,7 +17,10 @@
         </h3>
         <form class="form">
           <email-field></email-field>
-          <cta-button class="btn-hover" @submit.native.prevent="window.reload">Send Me The Tips »</cta-button>
+          <cta-button
+            class="font-styles btn-hover"
+            @submit.native.prevent="window.reload"
+          >Send Me The Tips »</cta-button>
         </form>
       </section>
     </div>
@@ -41,6 +44,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../sass/mixins";
+
+.font-styles {
+  font-size: 18px;
+  line-height: 22px;
+}
 
 .btn-hover:hover {
   background: linear-gradient(90deg, #b678aa 1.29%, #e28990 100%);
@@ -80,7 +88,7 @@ export default {
       max-width: 320px;
     }
 
-    @media (min-width: 930px) {
+    @include desktop-styles {
       max-width: 570px;
       height: 310px;
 
@@ -118,6 +126,10 @@ export default {
       line-height: 26px;
       margin-bottom: 23px;
       color: #464646;
+      @include desktop-styles {
+        font-size: 23px;
+        line-height: 28px;
+      }
     }
   }
 

@@ -334,6 +334,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -359,6 +362,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CtaButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CtaButton */ "./resources/js/components/CtaButton.vue");
 /* harmony import */ var _PopupForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PopupForm */ "./resources/js/components/PopupForm.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -445,7 +452,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".blog-header > *[data-v-66ea2c0c] {\n  width: calc(100% - 35px);\n  margin: 25px auto;\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n}\n.blog-header__divider[data-v-66ea2c0c] {\n  display: block;\n  margin: 0 auto;\n}\n.blog-header__title[data-v-66ea2c0c] {\n  font-size: 24px;\n  line-height: 29px;\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, ".blog-header > *[data-v-66ea2c0c] {\n  width: calc(100% - 35px);\n  margin: 25px auto;\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n}\n@media (min-width: 930px) {\n.blog-header > *[data-v-66ea2c0c] {\n    width: 100%;\n}\n}\n.blog-header__divider[data-v-66ea2c0c] {\n  display: block;\n  margin: 0 auto;\n}\n.blog-header__title[data-v-66ea2c0c] {\n  font-size: 24px;\n  line-height: 29px;\n  font-weight: bold;\n}\n@media (min-width: 930px) {\n.blog-header__title[data-v-66ea2c0c] {\n    font-size: 26px;\n    line-height: 31px;\n}\n}", ""]);
 
 // exports
 
@@ -464,7 +471,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".blog-post[data-v-bdf3a066] {\n  color: #101010;\n  width: 100%;\n  margin: auto;\n}\n.blog-post > *[data-v-bdf3a066] {\n  width: calc(100% - 35px);\n  margin: 25px auto;\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n}\n.blog-post__paragraph[data-v-bdf3a066] {\n  margin-bottom: 17px;\n}\n.blog-post__image[data-v-bdf3a066] {\n  margin: 0;\n  width: 100%;\n}\n.blog-post__section-heading[data-v-bdf3a066] {\n  margin-bottom: 16px;\n}", ""]);
+exports.push([module.i, ".blog-post[data-v-bdf3a066] {\n  color: #101010;\n  width: 100%;\n  margin: auto;\n}\n.blog-post > *[data-v-bdf3a066] {\n  width: calc(100% - 35px);\n  margin: 25px auto;\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n}\n@media (min-width: 930px) {\n.blog-post > *[data-v-bdf3a066] {\n    width: 100%;\n    margin: 28px auto;\n}\n}\n.blog-post__paragraph[data-v-bdf3a066] {\n  margin-bottom: 17px;\n}\n.blog-post__image[data-v-bdf3a066] {\n  margin: 0;\n  width: 100%;\n}\n@media (min-width: 930px) {\n.blog-post__image[data-v-bdf3a066] {\n    margin-bottom: 45px;\n}\n}\n.blog-post__section-heading[data-v-bdf3a066] {\n  margin-bottom: 16px;\n  font-size: 18px;\n  line-height: 22px;\n}", ""]);
 
 // exports
 
@@ -521,7 +528,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".btn-hover[data-v-b68bc496]:hover {\n  background: linear-gradient(90deg, #b678aa 1.29%, #e28990 100%);\n}\n.popup[data-v-b68bc496] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 100vw;\n}\n.popup_overlay[data-v-b68bc496] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  background: #262626;\n  mix-blend-mode: normal;\n  opacity: 0.8;\n}\n.popup__container[data-v-b68bc496] {\n  position: relative;\n  width: 90%;\n  max-width: 355px;\n  padding-bottom: 24px;\n  margin: auto;\n  background: #ffffff;\n  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);\n  display: flex;\n  flex-direction: column;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.popup__container > *[data-v-b68bc496] {\n  width: 90%;\n  max-width: 320px;\n}\n@media (min-width: 930px) {\n.popup__container[data-v-b68bc496] {\n    max-width: 570px;\n    height: 310px;\n}\n.popup__container > *[data-v-b68bc496] {\n    max-width: 440px;\n}\n}\n.popup__close[data-v-b68bc496] {\n  position: absolute;\n  height: 35px;\n  max-width: 25px;\n  right: 9px;\n  font-family: Lato;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 29px;\n  line-height: 35px;\n  /* identical to box height */\n  z-index: 999;\n  color: #464646;\n  cursor: pointer;\n}\n.popup .form-section[data-v-b68bc496] {\n  margin: 0 auto;\n}\n.popup .form-section_green-text[data-v-b68bc496] {\n  color: #427b09;\n}\n.popup .form-section__heading[data-v-b68bc496] {\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 26px;\n  margin-bottom: 23px;\n  color: #464646;\n}\n.popup .form__form-field[data-v-b68bc496] {\n  position: relative;\n}\n.popup .progress[data-v-b68bc496] {\n  margin: 12px auto;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.popup .progress__step-count[data-v-b68bc496] {\n  font-style: normal;\n  font-weight: 300;\n  font-size: 14px;\n  line-height: 17px;\n  color: #848484;\n  display: inline-block;\n  margin-bottom: 12px;\n}\n.popup .progress__meter[data-v-b68bc496] {\n  position: relative;\n  width: 100%;\n  height: 2px;\n  background: #e5e5e5;\n}\n.popup .progress__bar[data-v-b68bc496] {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 50%;\n  height: 2px;\n  background: linear-gradient(90deg, #e5424f 20%, #ac519c);\n}", ""]);
+exports.push([module.i, ".font-styles[data-v-b68bc496] {\n  font-size: 18px;\n  line-height: 22px;\n}\n.btn-hover[data-v-b68bc496]:hover {\n  background: linear-gradient(90deg, #b678aa 1.29%, #e28990 100%);\n}\n.popup[data-v-b68bc496] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 100vw;\n}\n.popup_overlay[data-v-b68bc496] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  background: #262626;\n  mix-blend-mode: normal;\n  opacity: 0.8;\n}\n.popup__container[data-v-b68bc496] {\n  position: relative;\n  width: 90%;\n  max-width: 355px;\n  padding-bottom: 24px;\n  margin: auto;\n  background: #ffffff;\n  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);\n  display: flex;\n  flex-direction: column;\n  top: 50%;\n  transform: translateY(-50%);\n}\n.popup__container > *[data-v-b68bc496] {\n  width: 90%;\n  max-width: 320px;\n}\n@media (min-width: 930px) {\n.popup__container[data-v-b68bc496] {\n    max-width: 570px;\n    height: 310px;\n}\n.popup__container > *[data-v-b68bc496] {\n    max-width: 440px;\n}\n}\n.popup__close[data-v-b68bc496] {\n  position: absolute;\n  height: 35px;\n  max-width: 25px;\n  right: 9px;\n  font-family: Lato;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 29px;\n  line-height: 35px;\n  /* identical to box height */\n  z-index: 999;\n  color: #464646;\n  cursor: pointer;\n}\n.popup .form-section[data-v-b68bc496] {\n  margin: 0 auto;\n}\n.popup .form-section_green-text[data-v-b68bc496] {\n  color: #427b09;\n}\n.popup .form-section__heading[data-v-b68bc496] {\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 26px;\n  margin-bottom: 23px;\n  color: #464646;\n}\n@media (min-width: 930px) {\n.popup .form-section__heading[data-v-b68bc496] {\n    font-size: 23px;\n    line-height: 28px;\n}\n}\n.popup .form__form-field[data-v-b68bc496] {\n  position: relative;\n}\n.popup .progress[data-v-b68bc496] {\n  margin: 12px auto;\n  margin-bottom: 20px;\n  text-align: center;\n}\n.popup .progress__step-count[data-v-b68bc496] {\n  font-style: normal;\n  font-weight: 300;\n  font-size: 14px;\n  line-height: 17px;\n  color: #848484;\n  display: inline-block;\n  margin-bottom: 12px;\n}\n.popup .progress__meter[data-v-b68bc496] {\n  position: relative;\n  width: 100%;\n  height: 2px;\n  background: #e5e5e5;\n}\n.popup .progress__bar[data-v-b68bc496] {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 50%;\n  height: 2px;\n  background: linear-gradient(90deg, #e5424f 20%, #ac519c);\n}", ""]);
 
 // exports
 
@@ -540,7 +547,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".side-bar[data-v-223abea1] {\n  width: 100%;\n  height: 426px;\n  background: #f5f5f5;\n  margin: 35px auto;\n  padding-top: 34px;\n}", ""]);
+exports.push([module.i, "@media (min-width: 930px) {\n.font-styles[data-v-223abea1] {\n    font-size: 15px;\n    line-height: 18px;\n}\n}\n.side-bar[data-v-223abea1] {\n  width: 100%;\n  height: 426px;\n  background: #f5f5f5;\n  margin: 35px auto;\n  padding-top: 34px;\n}", ""]);
 
 // exports
 
@@ -559,7 +566,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".blog-article[data-v-b6a8ac0a] {\n  margin: auto;\n}\n.blog-article .blog-header[data-v-b6a8ac0a],\n.blog-article .blog-post[data-v-b6a8ac0a] {\n  max-width: 560px;\n  margin: auto;\n  /* margin-bottom: 0; */\n}\n.blog-article .side-bar[data-v-b6a8ac0a] {\n  max-width: 340px;\n}\n@media (min-width: 930px) {\n.blog-article[data-v-b6a8ac0a] {\n    width: 890px;\n    display: flex;\n    flex-wrap: wrap;\n    margin: auto;\n}\n@supports (display: grid) {\n.blog-article[data-v-b6a8ac0a] {\n      display: grid;\n      grid-template-columns: 560px 270px;\n      grid-column-gap: 55px;\n}\n}\n.blog-article .side-bar[data-v-b6a8ac0a] {\n    max-width: 270px;\n    margin-top: 0;\n    margin-right: 0;\n    height: 640px;\n}\n.blog-article .blog-header[data-v-b6a8ac0a] {\n    margin-top: 76px;\n}\n.blog-article .blog-post[data-v-b6a8ac0a] {\n    margin-bottom: 130px;\n}\n.blog-article .blog-header[data-v-b6a8ac0a],\n.blog-article .blog-post[data-v-b6a8ac0a] {\n    margin-left: 0;\n    margin-right: 0;\n}\n}", ""]);
+exports.push([module.i, ".blog-article[data-v-b6a8ac0a] {\n  margin: auto;\n}\n.blog-article .blog-header[data-v-b6a8ac0a],\n.blog-article .blog-post[data-v-b6a8ac0a] {\n  max-width: 560px;\n  margin: auto;\n  /* margin-bottom: 0; */\n}\n.blog-article .side-bar[data-v-b6a8ac0a] {\n  max-width: 340px;\n}\n@media (min-width: 930px) {\n.blog-article[data-v-b6a8ac0a] {\n    width: 890px;\n    display: flex;\n    flex-wrap: wrap;\n    margin: auto;\n}\n@supports (display: grid) {\n.blog-article[data-v-b6a8ac0a] {\n      display: grid;\n      grid-template-columns: 560px 270px;\n      grid-column-gap: 55px;\n}\n}\n.blog-article .side-bar[data-v-b6a8ac0a] {\n    max-width: 270px;\n    margin-top: 0;\n    margin-right: 0;\n    height: 640px;\n}\n.blog-article .blog-header[data-v-b6a8ac0a] {\n    margin-top: 76px;\n    font-size: 26px;\n    line-height: 31px;\n}\n.blog-article .blog-post[data-v-b6a8ac0a] {\n    margin-bottom: 130px;\n}\n.blog-article .blog-header[data-v-b6a8ac0a],\n.blog-article .blog-post[data-v-b6a8ac0a] {\n    margin-left: 0;\n    margin-right: 0;\n}\n}", ""]);
 
 // exports
 
@@ -2143,7 +2150,7 @@ var render = function() {
             _c(
               "cta-button",
               {
-                staticClass: "btn-hover",
+                staticClass: "font-styles btn-hover",
                 nativeOn: {
                   submit: function($event) {
                     $event.preventDefault()
@@ -2214,6 +2221,7 @@ var render = function() {
       _c(
         "cta-button",
         {
+          staticClass: "font-styles",
           style: { width: "80%" },
           nativeOn: {
             click: function($event) {
