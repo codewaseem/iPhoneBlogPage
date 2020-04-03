@@ -3,7 +3,7 @@
     <blog-header
       class="blog-header"
     >10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)</blog-header>
-    <div></div>
+    <div class="empty-grid-box"></div>
     <blog-post class="blog-post"></blog-post>
     <side-bar class=".side-bar"></side-bar>
   </div>

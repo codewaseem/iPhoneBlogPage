@@ -15,25 +15,19 @@
           <span class="form-section_green-text">FREE</span> iPhone Photography
           Email Tips:
         </h3>
-        <form class="form">
-          <email-field></email-field>
-          <cta-button
-            class="font-styles btn-hover"
-            @submit.native.prevent="window.reload"
-          >Send Me The Tips »</cta-button>
-        </form>
+        <email-form></email-form>
       </section>
     </div>
   </div>
 </template>
 
 <script>
-import EmailField from "./EmailField";
+import EmailForm from "./EmailForm";
 import CtaButton from "./CtaButton";
 
 export default {
   components: {
-    EmailField,
+    EmailForm,
     CtaButton
   }
 };
@@ -41,15 +35,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../sass/mixins";
-
-.font-styles {
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.btn-hover:hover {
-  background: linear-gradient(90deg, #b678aa 1.29%, #e28990 100%);
-}
 
 .popup {
   position: fixed;
@@ -127,12 +112,6 @@ export default {
         font-size: 23px;
         line-height: 28px;
       }
-    }
-  }
-
-  .form {
-    @include element("form-field") {
-      position: relative;
     }
   }
 

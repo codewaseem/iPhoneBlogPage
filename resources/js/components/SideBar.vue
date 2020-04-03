@@ -5,13 +5,13 @@
       class="font-styles"
       :style="{width:'80%'}"
     >Send Me The Tips</cta-button>
-    <popup-form v-if="isPopupOpen" @close="closePopup"></popup-form>
+    <popup v-if="isPopupOpen" @close="closePopup"></popup>
   </aside>
 </template>
 
 <script>
 import CtaButton from "./CtaButton";
-import PopupForm from "./PopupForm";
+import Popup from "./Popup";
 export default {
   data() {
     return { isPopupOpen: false };
@@ -30,7 +30,7 @@ export default {
   },
   components: {
     CtaButton,
-    PopupForm
+    Popup
   }
 };
 </script>
