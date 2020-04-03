@@ -17,7 +17,7 @@
         </h3>
         <form class="form">
           <email-field></email-field>
-          <cta-button @submit.native.prevent="window.reload">Send Me The Tips »</cta-button>
+          <cta-button class="btn-hover" @submit.native.prevent="window.reload">Send Me The Tips »</cta-button>
         </form>
       </section>
     </div>
@@ -41,6 +41,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../sass/mixins";
+
+.btn-hover:hover {
+  background: linear-gradient(90deg, #b678aa 1.29%, #e28990 100%);
+}
 
 .popup {
   position: fixed;

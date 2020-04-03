@@ -15,7 +15,6 @@ export default {
 <style lang="scss" scoped>
 .cta-btn {
   background: linear-gradient(90deg, #ac519c 0.83%, #e5424f 100%);
-  /* box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5); */
   margin: auto;
   position: relative;
   font-weight: bold;
@@ -30,5 +29,10 @@ export default {
   width: 100%;
   font-family: Lato;
   height: 50px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
+  }
 }
 </style>
