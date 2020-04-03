@@ -11,7 +11,9 @@
     </p>
 
     <picture>
-      <source srcset="../../images/img.jpg 1x, ../../images/img@2x.jpg 2x" />
+      <source
+        srcset="../../images/img.jpg 1x, ../../images/img@2x.jpg 2x, ../../images/img@3x.jpg 3x"
+      />
       <img class="blog-post__image" src="../../images/img.jpg" alt="Take better travel photos" />
     </picture>
 
