@@ -10,7 +10,10 @@
       discover how to take better travel photos with your iPhone!
     </p>
 
-    <img class="blog-post__image" src="../../images/img.jpg" alt />
+    <picture>
+      <source srcset="../../images/img.jpg 1x, ../../images/img@2x.jpg 2x" />
+      <img class="blog-post__image" src="../../images/img.jpg" alt="Take better travel photos" />
+    </picture>
 
     <section>
       <h2 class="blog-post__section-heading">

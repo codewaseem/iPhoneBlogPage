@@ -1772,10 +1772,25 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
-      _c("img", {
-        staticClass: "blog-post__image",
-        attrs: { src: __webpack_require__(/*! ../../images/img.jpg */ "./resources/images/img.jpg"), alt: "" }
-      }),
+      _c("picture", [
+        _c("source", {
+          attrs: {
+            srcset:
+              __webpack_require__(/*! ../../images/img.jpg */ "./resources/images/img.jpg") +
+              " 1x, " +
+              __webpack_require__(/*! ../../images/img@2x.jpg */ "./resources/images/img@2x.jpg") +
+              " 2x"
+          }
+        }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "blog-post__image",
+          attrs: {
+            src: __webpack_require__(/*! ../../images/img.jpg */ "./resources/images/img.jpg"),
+            alt: "Take better travel photos"
+          }
+        })
+      ]),
       _vm._v(" "),
       _c("section", [
         _c("h2", { staticClass: "blog-post__section-heading" }, [
@@ -14245,6 +14260,17 @@ module.exports = g;
 /***/ (function(module, exports) {
 
 module.exports = "/images/img.jpg?e4f1f0da94cd680f1c2bb7dd4b75c163";
+
+/***/ }),
+
+/***/ "./resources/images/img@2x.jpg":
+/*!*************************************!*\
+  !*** ./resources/images/img@2x.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img@2x.jpg?b68b0fad26acc2af8be1c17bf9496369";
 
 /***/ }),
 
