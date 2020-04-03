@@ -197,17 +197,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log("Component mounted.");
+    console.log("Blog-Post mounted.");
   }
 });
 
@@ -361,10 +353,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     openPopup: function openPopup() {
-      this.isPopupOpen = true;
+      this.isPopupOpen = true; //prevent scrolling when pop-up is open
+
+      window.document.body.style.overflow = "hidden";
     },
     closePopup: function closePopup() {
-      this.isPopupOpen = false;
+      this.isPopupOpen = false; // allow normal scroll behaviour when pop-up is closed
+
+      window.document.body.style.overflow = "";
     }
   },
   components: {
@@ -419,7 +415,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".blog-article[data-v-bdf3a066] {\n  color: #101010;\n  width: 375px;\n  margin: auto;\n}\n.blog-article > *[data-v-bdf3a066] {\n  width: 340px;\n  margin: 25px auto;\n}\n.blog-article__title[data-v-bdf3a066] {\n  font-size: 24px;\n  line-height: 29px;\n  font-weight: bold;\n}\n.blog-article__divider[data-v-bdf3a066] {\n  display: block;\n  margin-top: 0;\n}\n.blog-article__paragraph[data-v-bdf3a066] {\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n  margin-bottom: 17px;\n}\n.blog-article__image[data-v-bdf3a066] {\n  margin: 0;\n  width: 100%;\n}\n.blog-article__section-heading[data-v-bdf3a066] {\n  margin-bottom: 16px;\n}", ""]);
+exports.push([module.i, ".blog-post[data-v-bdf3a066] {\n  color: #101010;\n  width: 100%;\n  max-width: 560px;\n  margin: auto;\n}\n.blog-post > *[data-v-bdf3a066] {\n  width: calc(100% - 35px);\n  margin: 25px auto;\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 24px;\n}\n.blog-post__title[data-v-bdf3a066] {\n  font-size: 24px;\n  line-height: 29px;\n  font-weight: bold;\n}\n.blog-post__divider[data-v-bdf3a066] {\n  margin-top: 0;\n  display: block;\n}\n.blog-post__paragraph[data-v-bdf3a066] {\n  margin-bottom: 17px;\n}\n.blog-post__image[data-v-bdf3a066] {\n  margin: 0;\n  width: 100%;\n}\n.blog-post__section-heading[data-v-bdf3a066] {\n  margin-bottom: 16px;\n}", ""]);
 
 // exports
 
@@ -495,7 +491,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".side-bar[data-v-223abea1] {\n  width: 340px;\n  height: 426px;\n  background: #f5f5f5;\n  margin: 33px auto 37px;\n  padding-top: 34px;\n}", ""]);
+exports.push([module.i, ".side-bar[data-v-223abea1] {\n  width: 100%;\n  max-width: 340px;\n  height: 426px;\n  background: #f5f5f5;\n  margin: 33px auto 37px;\n  padding-top: 34px;\n}", ""]);
 
 // exports
 
@@ -1731,21 +1727,20 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "blog-article" }, [
-    _c("h2", { staticClass: "blog-article__title" }, [
+  return _c("div", { staticClass: "blog-post" }, [
+    _c("h2", { staticClass: "blog-post__title" }, [
       _vm._v(
-        "\n        10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)\n    "
+        "10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)"
       )
     ]),
     _vm._v(" "),
     _c(
       "svg",
       {
-        staticClass: "blog-article__divider",
+        staticClass: "blog-post__divider",
         attrs: {
-          width: "340",
-          height: "3",
-          viewBox: "0 0 340 3",
+          width: "100%",
+          viewBox: "0 0 340 2",
           fill: "none",
           xmlns: "http://www.w3.org/2000/svg"
         }
@@ -1783,14 +1778,14 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("p", { staticClass: "blog-article__paragraph" }, [
+    _c("p", [
       _vm._v(
-        "\n        How do you capture more interesting travel photos with your iPhone?\n        How do you avoid taking the same cliché vacation photos that\n        everyone else takes? I recently interviewed Steffen Geldner – a\n        talented iPhone photographer with a passion for travel. In this\n        article, Steffen reveals 7 tips for shooting beautiful travel photos\n        that will preserve the amazing memories of your trip. Read on to\n        discover how to take better travel photos with your iPhone!\n    "
+        "\n    How do you capture more interesting travel photos with your iPhone?\n    How do you avoid taking the same cliché vacation photos that\n    everyone else takes? I recently interviewed Steffen Geldner – a\n    talented iPhone photographer with a passion for travel. In this\n    article, Steffen reveals 7 tips for shooting beautiful travel photos\n    that will preserve the amazing memories of your trip. Read on to\n    discover how to take better travel photos with your iPhone!\n  "
       )
     ]),
     _vm._v(" "),
     _c("img", {
-      staticClass: "blog-article__image",
+      staticClass: "blog-post__image",
       attrs: { src: __webpack_require__(/*! ../../images/img.jpg */ "./resources/images/img.jpg"), alt: "" }
     }),
     _vm._v(" "),
@@ -1805,43 +1800,43 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("h2", { staticClass: "blog-article__section-heading" }, [
+      _c("h2", { staticClass: "blog-post__section-heading" }, [
         _vm._v(
-          "\n            1. Research Your Destination To Find The Best Photo\n            Opportunities\n        "
+          "\n      1. Research Your Destination To Find The Best Photo\n      Opportunities\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            Before your trip, I recommend researching the destination to\n            find the most interesting photo opportunities.\n        "
+          "\n      Before your trip, I recommend researching the destination to\n      find the most interesting photo opportunities.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            I always research the location I’m traveling to. I do this\n            extensively and obsessively!\n        "
+          "\n      I always research the location I’m traveling to. I do this\n      extensively and obsessively!\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            It’s up to you how much research you do. But you should\n            definitely spend a bit of time looking up some great places to\n            take pictures.\n        "
+          "\n      It’s up to you how much research you do. But you should\n      definitely spend a bit of time looking up some great places to\n      take pictures.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
-        _vm._v("\n            So, what kind of research can you do?\n        ")
+      _c("p", { staticClass: "blog-post__paragraph" }, [
+        _vm._v("So, what kind of research can you do?")
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            First, you could search for photos that other people have taken\n            at the locations you’re planning to visit.\n        "
+          "\n      First, you could search for photos that other people have taken\n      at the locations you’re planning to visit.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            Search on Instagram or Google to get an idea of the kinds of\n            photos people take there.\n        "
+          "\n      Search on Instagram or Google to get an idea of the kinds of\n      photos people take there.\n    "
         )
       ])
     ])
@@ -1850,46 +1845,46 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "blog-article__section" }, [
-      _c("h2", { staticClass: "blog-article__section-heading" }, [
+    return _c("section", { staticClass: "blog-post__section" }, [
+      _c("h2", { staticClass: "blog-post__section-heading" }, [
         _vm._v(
-          "\n            2. Capture Your Journey To Tell The Complete Story Of Your\n            Travels\n        "
+          "\n      2. Capture Your Journey To Tell The Complete Story Of Your\n      Travels\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            Travel photography isn’t just about photographing the\n            destination.\n        "
+          "\n      Travel photography isn’t just about photographing the\n      destination.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            For a more complete photographic story, capture your journey to\n            and from the location you’re visiting.\n        "
+          "\n      For a more complete photographic story, capture your journey to\n      and from the location you’re visiting.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            If you’re traveling by plane, try to get a window seat where you\n            have a view of the wing or propeller.\n        "
+          "\n      If you’re traveling by plane, try to get a window seat where you\n      have a view of the wing or propeller.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            And of course, you could capture a beautiful aerial view of\n            clouds, mountains, or city lights as you’re flying above.\n        "
+          "\n      And of course, you could capture a beautiful aerial view of\n      clouds, mountains, or city lights as you’re flying above.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            Your journey will often involve several different types of\n            transport. And they all offer great photo opportunities.\n        "
+          "\n      Your journey will often involve several different types of\n      transport. And they all offer great photo opportunities.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "blog-article__paragraph" }, [
+      _c("p", { staticClass: "blog-post__paragraph" }, [
         _vm._v(
-          "\n            Whether you’re traveling by car, taxi, bus, train, boat, or\n            plane, try to capture some interesting photos.\n        "
+          "\n      Whether you’re traveling by car, taxi, bus, train, boat, or\n      plane, try to capture some interesting photos.\n    "
         )
       ])
     ])
@@ -2076,7 +2071,7 @@ var render = function() {
       _c(
         "cta-button",
         {
-          style: { width: "283px" },
+          style: { width: "80%" },
           nativeOn: {
             click: function($event) {
               return _vm.openPopup($event)
