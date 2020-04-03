@@ -1,3 +1,11 @@
+@mixin default-section-style {
+    width: calc(100% - 35px);
+    margin: 25px auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 // Mixin for BEM Methodology
 // Credits: https://css-tricks.com/snippets/sass/bem-mixins/
 @mixin element($element) {

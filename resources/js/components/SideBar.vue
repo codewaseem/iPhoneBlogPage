@@ -39,10 +39,9 @@ export default {
 
 .side-bar {
   width: 100%;
-  max-width: 340px;
   height: 426px;
   background: #f5f5f5;
-  margin: 33px auto 37px;
+  margin: 35px auto;
   padding-top: 34px;
 }
 </style>
