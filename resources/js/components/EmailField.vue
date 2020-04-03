@@ -27,9 +27,6 @@ export default {
         this.placeholder = "Please enter your email here";
       }
     }
-  },
-  mounted() {
-    console.log("Component mounted.");
   }
 };
 </script>

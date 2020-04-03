@@ -27,14 +27,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  mounted() {
-    console.log("Blog-Header mounted.");
-  }
-};
-</script>
-
 <style lang="scss" scoped>
 @import "../../sass/mixins";
 

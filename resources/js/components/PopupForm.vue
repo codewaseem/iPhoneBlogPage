@@ -35,9 +35,6 @@ export default {
   components: {
     EmailField,
     CtaButton
-  },
-  mounted() {
-    console.log("Component mounted.");
   }
 };
 </script>

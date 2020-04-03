@@ -31,9 +31,6 @@ export default {
   components: {
     CtaButton,
     PopupForm
-  },
-  mounted() {
-    console.log("Component mounted.");
   }
 };
 </script>
