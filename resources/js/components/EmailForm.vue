@@ -2,7 +2,7 @@
 <template>
   <form class="form" @submit.prevent="onSubmit">
     <label :class="{invalid : isInvalidEmail}" class="has-float-label">
-      <input @change="checkEmail" placeholder="mail@example.com" v-model="email" />
+      <input placeholder="mail@example.com" v-model="email" />
 
       <!--  Email Regex:  https://regex101.com/r/mX1xW0/1 -->
 

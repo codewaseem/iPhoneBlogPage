@@ -1967,7 +1967,6 @@ var render = function() {
             attrs: { placeholder: "mail@example.com" },
             domProps: { value: _vm.email },
             on: {
-              change: _vm.checkEmail,
               input: function($event) {
                 if ($event.target.composing) {
                   return
