@@ -58,9 +58,38 @@ export default {
     opacity: 0.8;
   }
 
+  @include element("container") {
+    position: relative;
+    width: 90%;
+    max-width: 355px;
+    padding-bottom: 24px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+
+    > * {
+      width: 90%;
+      max-width: 320px;
+    }
+
+    @media (min-width: 930px) {
+      max-width: 570px;
+      height: 310px;
+
+      > * {
+        max-width: 440px;
+      }
+    }
+  }
+
   @include element("close") {
     position: absolute;
     height: 35px;
+    max-width: 25px;
     right: 9px;
     font-family: Lato;
     font-style: normal;
@@ -73,21 +102,7 @@ export default {
     cursor: pointer;
   }
 
-  @include element("container") {
-    position: relative;
-    width: 355px;
-    padding-bottom: 24px;
-    margin: auto;
-    background: #ffffff;
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
   .form-section {
-    width: 320px;
     margin: 0 auto;
 
     @include modifier("green-text") {
@@ -109,7 +124,6 @@ export default {
   }
 
   .progress {
-    width: 320px;
     margin: 12px auto;
     margin-bottom: 20px;
     text-align: center;
